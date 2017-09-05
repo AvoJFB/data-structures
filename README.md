@@ -1,2 +1,3 @@
-# data-structures
-Basic data structure realizations in JS
+### Data Structures
+
+## Stack
