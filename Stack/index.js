@@ -9,7 +9,7 @@ class Stack {
   }
 
   pop() {
-    if (this.items.length === 0) {
+    if (this.items.count() === 0) {
       throw new Error('The stack is empty');
     } else {
       const res = this.items[this.items.length - 1];
@@ -20,11 +20,15 @@ class Stack {
   }
 
   peek() {
-    if (this.items.length === 0) {
+    if (this.items.count() === 0) {
       throw new Error('The stack is empty');
     } else {
       return this.items[this.items.length - 1];
     }
+  }
+
+  count() {
+    return this.items.length;
   }
 }
 
