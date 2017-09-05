@@ -4,7 +4,8 @@
   "description": "Basic data structure realizations in JS",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
