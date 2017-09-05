@@ -1,0 +1,24 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Basic data structure realizations in JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvoJFB/data-structures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AvoJFB/data-structures/issues"
+  },
+  "homepage": "https://github.com/AvoJFB/data-structures#readme",
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
