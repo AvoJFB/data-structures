@@ -8,18 +8,17 @@ class MaxHeap {
       throw Error('Item is not a number');
     } else {
       this.items.push(item);
-      console.log(`Before: ${this.items}`);
       this.bubbleUp(this.count() - 1);
-      console.log(`After: ${this.items}`);
     }
   }
 
   pop() {
+    if (this.count() === 0) {
+      throw Error('Cannot pop on empty heap');
+    }
     this.items[0] = this.items[this.count() - 1];
     this.items.pop();
-    console.log(`Before sink: ${this.items}`);
     this.sinkDown(0);
-    console.log(`After sink: ${this.items}`);
   }
 
   count() {
@@ -66,6 +65,10 @@ class MaxHeap {
         sorted = true;
       }
     }
+  }
+
+  toArray() {
+    return this.items;
   }
 }
 
