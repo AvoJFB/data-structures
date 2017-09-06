@@ -4,7 +4,11 @@ class Stack {
   }
 
   push(item) {
-    this.items.push(item);
+    if (item) {
+      this.items.push(item);
+    } else {
+      throw Error('No item provided');
+    }
   }
 
   pop() {

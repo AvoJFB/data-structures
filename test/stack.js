@@ -14,7 +14,7 @@ describe('Stack', () => {
 
   it('should return last element on peek', () => {
     const stack = new Stack(['a', 'b', 'c', 'd']);
-    assert.equal(stack.pop(), 'd');
+    assert.equal(stack.peek(), 'd');
   });
 
   it('should push item to empty stack', () => {
@@ -32,5 +32,20 @@ describe('Stack', () => {
     const stack = new Stack(['a', 'b', 'c']);
     stack.pop();
     assert.equal(stack.peek(), 'b');
+  });
+
+  it('should throw error when calling pop on empty stack', () => {
+    const stack = new Stack();
+    assert.throws(stack.pop, Error);
+  });
+
+  it('should throw error when calling peek on empty stack', () => {
+    const stack = new Stack();
+    assert.throws(stack.peek, Error);
+  });
+
+  it('should throw error when calling push without argument', () => {
+    const stack = new Stack();
+    assert.throws(stack.push, Error);
   });
 });
