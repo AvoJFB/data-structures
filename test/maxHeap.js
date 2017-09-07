@@ -33,7 +33,7 @@ describe('MaxHeap', () => {
   });
 
   it('should remove top element on pop and sort heap correctly', () => {
-    const maxHeap = new MaxHeap(['a', 'b', 'c']);
+    const maxHeap = new MaxHeap();
     maxHeap.push(1);
     maxHeap.push(2);
     maxHeap.push(7);
