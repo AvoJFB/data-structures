@@ -82,6 +82,30 @@ const queue = new Queue(['a','b','c']);
 queue.count(); // Queue: ['a','b','c'] | Returns 3
 ```
 
+## MinHeap
+To create a new MinHeap use the following syntax.
+```javascript
+const minHeap = new MinHeap();
+```
+
+### Methods
+#### push
+Pushes an item to the top of the MinHeap and sorts it.
+```javascript
+const minHeap = new MinHeap();
+minHeap.push(1); // MinHeap: [1]
+```
+
+#### pop
+Removes the smallest item from the top of the MinHeap and sorts it.
+```javascript
+const minHeap = new MinHeap();
+minHeap.push(5);
+minHeap.push(3);
+minHeap.push(2);
+minHeap.pop(); // MinHeap: [3, 5]
+```
+
 ## Running the tests
 ```
 npm install
